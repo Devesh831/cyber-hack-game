@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#070b16" />
+  <meta name="description" content="A neon terminal code-breaking challenge. Crack the four-digit code in ten attempts." />
+  <title>Cyber Hack — Crack the Code</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Cyber Hack home"><span class="brand-mark">⌘</span><span>CYBER<span class="accent">.HACK</span></span></a>
+      <span class="connection"><i></i> SECURE CONNECTION</span>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="eyebrow"><span class="eyebrow-line"></span> BREACH SIMULATOR <span class="eyebrow-line"></span></div>
+      <h1>CRACK THE <span>CODE</span></h1>
+      <p class="subtitle">One sequence. Ten attempts. Can you break in?</p>
+    </section>
+
+    <section class="game-layout" aria-label="Code breaking game">
+      <aside class="panel briefing">
+        <div class="panel-title"><span class="status-dot"></span> MISSION BRIEF</div>
+        <p class="brief-copy">A four-digit access key is locked behind the firewall. Decode the signal before the system seals.</p>
+        <div class="rules">
+          <div><span class="rule-icon exact-icon">●</span><p><strong>Exact match</strong><small>Right digit, right position</small></p></div>
+          <div><span class="rule-icon misplaced-icon">◉</span><p><strong>Signal detected</strong><small>Right digit, wrong position</small></p></div>
+        </div>
+        <div class="difficulty-wrap">
+          <label for="difficulty">PROTOCOL</label>
+          <select id="difficulty" aria-label="Choose difficulty">
+            <option value="easy">EASY</option>
+            <option value="medium" selected>MEDIUM</option>
+            <option value="hard">HARD</option>
+          </select>
+          <p class="mode-note" id="mode-note">Digits 0–9 · no repeated digits</p>
+        </div>
+        <div class="best-score">
+          <div><span class="trophy">✦</span><span>BEST SCORE<small id="best-mode">MEDIUM MODE</small></span></div>
+          <strong id="best-score">—</strong>
+        </div>
+        <div class="brief-footer"><span>ENCRYPTION <b>AES-256</b></span><span>STATUS <b class="online">ONLINE</b></span></div>
+      </aside>
+
+      <section class="panel terminal" aria-labelledby="terminal-title">
+        <div class="terminal-head">
+          <div class="window-controls"><i></i><i></i><i></i></div>
+          <span id="terminal-title">ROOT_ACCESS://AUTH_SEQUENCE</span>
+          <span class="terminal-live"><i></i> LIVE</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-welcome"><span class="prompt">root@cyberhack:~$</span> initiate_bruteforce --safe-mode<br /><span class="muted">>> Secure channel established. Enter a 4-digit sequence.</span></div>
+          <div class="attempt-meter"><span>ATTEMPTS</span><div class="pips" id="pips" aria-label="10 attempts remaining"></div><strong><span id="attempts-left">10</span><small> / 10</small></strong></div>
+          <div class="guess-form">
+            <label for="guess-input"><span class="prompt">root@cyberhack:~$</span> enter_code <span class="cursor">_</span></label>
+            <div class="input-row"><input id="guess-input" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="4" pattern="[0-9]{4}" aria-describedby="input-help" placeholder="_ _ _ _" aria-label="Enter a four digit code" /><button id="submit-guess" class="primary-button" type="button">SUBMIT <span>↵</span></button></div>
+            <small id="input-help" class="input-help">4 digits · no repeats in Medium and Hard</small>
+            <p id="validation" class="validation" role="alert" aria-live="polite"></p>
+          </div>
+          <div class="feedback-head"><span>DECRYPTION LOG</span><span id="log-count">0 ENTRIES</span></div>
+          <div class="history" id="history" aria-live="polite" aria-label="Guess history"></div>
+          <div class="result-banner" id="result-banner" role="status" aria-live="polite" hidden></div>
+        </div>
+        <div class="terminal-foot"><span><i class="pulse"></i> LISTENING FOR INPUT</span><span>SESSION <b id="session-id">----</b></span></div>
+      </section>
+    </section>
+
+    <section class="bottom-row">
+      <div class="panel score-panel"><span class="score-icon">✧</span><div><span class="panel-title">CURRENT SCORE</span><strong id="score">0000</strong><small id="score-caption">Crack the code to earn points</small></div><div class="score-orbit" aria-hidden="true"></div></div>
+      <div class="action-panel"><button id="restart" class="secondary-button" type="button">↺ RESTART RUN</button><button id="new-game" class="new-button" type="button">＋ NEW CODE</button></div>
+    </section>
+
+    <footer><span>CYBER.HACK <b>v1.0</b></span><span>PLAY SMART. STAY CURIOUS.</span><span>LOCAL STORAGE <b class="online">ENABLED</b></span></footer>
+  </main>
+  <script src="game.js" defer></script>
+</body>
+</html>
+
