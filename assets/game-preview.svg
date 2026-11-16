@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Cyber Hack: Crack the Code</title>
+  <desc id="desc">Neon cyberpunk terminal showing a four digit code breaking challenge, ten attempts, and exact and misplaced digit hints.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111a32"/><stop offset="1" stop-color="#070b16"/></linearGradient>
+    <linearGradient id="glow"><stop stop-color="#42e8e0"/><stop offset="1" stop-color="#9e7bff"/></linearGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#bg)"/>
+  <circle cx="300" cy="90" r="180" fill="#42e8e0" opacity=".08" filter="url(#shadow)"/>
+  <circle cx="980" cy="510" r="220" fill="#9e7bff" opacity=".09" filter="url(#shadow)"/>
+  <rect x="54" y="42" width="1092" height="546" rx="19" fill="#0b1220" stroke="#263650" stroke-width="2"/>
+  <path d="M73 43h1054a19 19 0 0 1 19 19v48H54V62a19 19 0 0 1 19-19" fill="#101a2b"/>
+  <circle cx="82" cy="76" r="7" fill="#ff6177"/><circle cx="106" cy="76" r="7" fill="#f0cb66"/><circle cx="130" cy="76" r="7" fill="#42d9a3"/>
+  <text x="600" y="81" text-anchor="middle" fill="#8e9fbd" font-family="monospace" font-size="17" letter-spacing="3">ROOT_ACCESS://AUTH_SEQUENCE</text>
+  <text x="108" y="159" fill="#42e8e0" font-family="monospace" font-size="15" letter-spacing="5">BREACH SIMULATOR</text>
+  <text x="105" y="232" fill="#edf3ff" font-family="Arial,sans-serif" font-size="61" font-weight="700" letter-spacing="3">CRACK THE <tspan fill="#42e8e0">CODE</tspan></text>
+  <text x="108" y="273" fill="#9aa8c2" font-family="Arial,sans-serif" font-size="22">One sequence. Ten attempts. Can you break in?</text>
+  <rect x="105" y="316" width="990" height="214" rx="12" fill="#080f1c" stroke="#23324b"/>
+  <text x="135" y="354" fill="#42e8e0" font-family="monospace" font-size="15">root@cyberhack:~$</text>
+  <text x="322" y="354" fill="#dce7fa" font-family="monospace" font-size="15">initiate_bruteforce --safe-mode</text>
+  <text x="135" y="384" fill="#6f809e" font-family="monospace" font-size="14">&gt;&gt; Secure channel established. Enter a 4-digit sequence.</text>
+  <text x="135" y="427" fill="#8494b0" font-family="monospace" font-size="13" letter-spacing="2">ATTEMPTS</text>
+  <g fill="#42e8e0"><rect x="245" y="418" width="32" height="6" rx="3"/><rect x="284" y="418" width="32" height="6" rx="3"/><rect x="323" y="418" width="32" height="6" rx="3"/><rect x="362" y="418" width="32" height="6" rx="3"/><rect x="401" y="418" width="32" height="6" rx="3"/><rect x="440" y="418" width="32" height="6" rx="3"/><rect x="479" y="418" width="32" height="6" rx="3"/><rect x="518" y="418" width="32" height="6" rx="3"/><rect x="557" y="418" width="32" height="6" rx="3"/><rect x="596" y="418" width="32" height="6" rx="3"/></g>
+  <text x="654" y="426" fill="#42e8e0" font-family="monospace" font-size="17">10<tspan fill="#63728e" font-size="13"> / 10</tspan></text>
+  <text x="135" y="475" fill="#42e8e0" font-family="monospace" font-size="15">root@cyberhack:~$</text>
+  <text x="325" y="475" fill="#42e8e0" font-family="monospace" font-size="22" letter-spacing="12">_ _ _ _</text>
+  <rect x="821" y="449" width="220" height="47" rx="7" fill="url(#glow)"/>
+  <text x="931" y="479" text-anchor="middle" fill="#07131e" font-family="monospace" font-weight="700" font-size="14" letter-spacing="2">SUBMIT  ↵</text>
+  <text x="136" y="510" fill="#70809b" font-family="monospace" font-size="12">● exact match</text><text x="306" y="510" fill="#bba7ff" font-family="monospace" font-size="12">◉ right digit, wrong place</text>
+  <text x="108" y="565" fill="#65748f" font-family="monospace" font-size="12" letter-spacing="2">CYBER.HACK <tspan fill="#42e8e0">v1.0</tspan></text>
+  <text x="1091" y="565" text-anchor="end" fill="#65748f" font-family="monospace" font-size="12" letter-spacing="2">PLAY SMART. STAY CURIOUS.</text>
+</svg>
+
